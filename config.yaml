@@ -1,5 +1,3 @@
-# config.yaml
-
 data:
   tickers:
     - "EURUSD=X"
