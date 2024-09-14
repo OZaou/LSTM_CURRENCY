@@ -1,4 +1,3 @@
-# main.py
 
 import torch
 import logging
@@ -23,7 +22,6 @@ def train_currency(ticker, config):
     dataset.load_data()
     dataset.preprocess_data()
 
-    # Mise à jour de input_size basé sur les données
     input_size = dataset.get_input_size()
     config['model']['input_size'] = input_size
 
