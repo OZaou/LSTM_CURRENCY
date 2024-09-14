@@ -48,7 +48,7 @@ class ForexDataset:
         self.data['MACD'] = ta.trend.MACD(self.data['Close']).macd()
         self.data['EMA'] = ta.trend.EMAIndicator(self.data['Close']).ema_indicator()
         self.data = self.data.dropna()
-        self.features = self.original_features + ['RSI', 'MACD', 'EMA']  # Mettre à jour les features
+        self.features = self.original_features + ['RSI', 'MACD', 'EMA'] 
 
     def preprocess_data(self):
         data_values = self.data[self.features].values
