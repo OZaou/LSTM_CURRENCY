@@ -47,7 +47,6 @@ class Trainer:
                 f"Train Loss: {np.mean(train_losses):.4f}, Validation Loss: {val_loss:.4f}"
             )
 
-            # Arret précoce (Early Stopping)
             if val_loss < self.best_val_loss:
                 self.best_val_loss = val_loss
                 self.epochs_no_improve = 0
