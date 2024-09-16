@@ -12,7 +12,7 @@ data:
   validation_size: 0.1
 
 model:
-  input_size: 8  # Nombre d'entrées du modèle (8 features)
+  input_size: 8  
   hidden_size: 128
   num_layers: 2
   dropout: 0.2
@@ -22,7 +22,7 @@ training:
   batch_size: 128
   epochs: 100
   learning_rate: 0.001
-  patience: 10  # Patience pour l'arrêt anticipé
+  patience: 10
 
 logging:
   level: "INFO"
