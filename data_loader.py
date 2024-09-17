@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import logging
-import ta  # Librairie pour les indicateurs techniques
+import ta 
 import copy
 
 class ForexDataset:
